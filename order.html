@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Restaurant Management Website</title>
+   <link rel="icon" href="images/logo-original.jpg" type="image/x-icon">
+   
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+   
+   <!-- header section starts     -->
+
+<section class="header">
+
+   <a href="#" class="logo"> <img src="images/logo.png"></i> DineOut </a>
+
+   <nav class="navbar">
+      <a href="index.html #home">home</a>
+      <a href="about.html #about">about</a>
+      <a href="food.html #food">food</a>
+      <a href="gallery.html #gallery">gallery</a>
+      <a href="menu.html #menu">menu</a>
+      <a href="order.html #order">order</a>
+   </nav>
+
+   <div id="menu-btn" class="fas fa-bars"></div>
+
+</section>
+
+<!-- header section ends    -->
+
+<!-- order section starts  -->
+
+<section class="order" id="order">
+
+   <div class="heading">
+      <span>order now</span>
+      <h3>fast home delivery</h3>
+   </div>
+
+   <form action="">
+      <div class="box-container orderpage">
+         <div class="box">
+            <div class="inputBox">
+               <span>full name</span>
+               <input type="text" placeholder="enter your name">
+            </div>
+               <div class="inputBox">
+                  <span>food name</span>
+                  <input list="food items" name="food items"  placeholder="Food You Want">
+                  <datalist id="food items">
+                     <option value="Oats Idli">
+                     <option value="Uttapam">
+                     <option value="Poori">
+                     <option value="Ven Pongal">
+                     <option value="Aloo Paratha">
+                     <option value="Malabar Fish Biriyani">
+                     <option value="South Indain Meals">
+                     <option value="Paratha With Curry (2 Pcs)">
+                     <option value="Chicken Biriyani Combo">
+                     <option value="Butter Chicken">
+                     <option value="Naan (Flatbread)">
+                     <option value="Masala Dosa">
+                     <option value="Tandoori Roti">
+                     <option value="Paneer Butter Masala">
+                     <option value="Cold Coffee">
+                     <option value="Butterscotch Dry Fruit Milkshake">
+                     <option value="Oreo Milkshake">
+                     <option value="Sharjah Dry Fruits Milkshake Ice Cream">
+                     <option value="Lemon Soda">
+                     <option value="Cold Horlicks">
+                     <option value="Falooda">
+                     <option value="Jigarthanda">
+                     <option value="Badam Kheer">
+                     <option value="Gulab Jamun">      
+                  </datalist>
+                     
+            </div>
+            <div class="inputBox">
+               <span>order details</span>
+               <input type="text" placeholder="specifics with food">
+            </div>
+            <div class="inputBox">
+               <span>your address</span>
+               <textarea name="" placeholder="enter your address" id="" cols="30" rows="10"></textarea>
+            </div>
+         </div>
+         <div class="box">
+            <div class="inputBox">
+               <span>number</span>
+               <input type="number" placeholder="enter your number">
+            </div>
+            <div class="inputBox">
+               <span>how much</span>
+               <input type="number" placeholder="how many you want">
+            </div>
+            <div class="inputBox">
+               <span>when you want</span>
+               <input type="datetime-local">
+            </div>
+            <div class="inputBox">
+               <span>our address</span>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d62615.15279672678!2d78.13066535167565!3d11.228487955951156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3babce5e3f22014f%3A0xa0ab89ef32c34a77!2sNamakkal%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v1662296973687!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+         </div>
+      </div>
+      <input type="submit" onclick="myFunction()" value="order now" class="btn">
+      <p id="demo"></p>
+      <script>
+      function myFunction() {
+      var txt;
+      if (confirm("Order Placed")) {
+         txt = "Your order placed!";
+      } else {
+         txt = "Your order is cancelled!";
+      }
+      document.getElementById("demo").innerHTML = txt;   
+      }
+      </script>
+   </form>
+   
+</section>
+<!--order Section ends-->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="icons-container">
+
+      <div class="icons">
+         <i class="fas fa-clock"></i>
+         <h3>opening hours</h3>
+         <p>07:00am to 10:00pm</p>
+      </div>
+
+      <div class="icons">
+         <i class="fas fa-phone"></i>
+         <h3>phone</h3>
+         <p>+91 7539947757</p>
+         <p>+91 9626559181</p>
+      </div>
+
+      <div class="icons">
+         <i class="fas fa-envelope"></i>
+         <h3>email</h3>
+         <p>Dayout@gmail.com</p>
+         <p>sneka2711@gmail.com</p>
+      </div>
+
+      <div class="icons">
+         <i class="fas fa-map"></i>
+         <h3>address</h3>
+         <p>Namakkal - 637013</p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- footer section ends  -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<script>
+   lightGallery(document.querySelector('.gallery .gallery-container'));
+</script>
+<!-- font awesome cdn link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+</body>
+</html>
