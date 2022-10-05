@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Restaurant Management Website</title>
+   <link rel="icon" href="images/logo-original.jpg" type="image/x-icon">
+   
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+	<!-- header section starts     -->
+
+<section class="header">
+
+   <a href="#" class="logo"> <img src="images/logo.png"></i> DineOut </a>
+
+   <nav class="navbar">
+      <a href="index.html #home">home</a>
+      <a href="about.html #about">about</a>
+      <a href="food.html #food">food</a>
+      <a href="gallery.html #gallery">gallery</a>
+      <a href="menu.html #menu">menu</a>
+      <a href="order.html #order">order</a>
+   </nav>
+
+   <div id="menu-btn" class="fas fa-bars"></div>
+
+</section>
+
+<!-- header section ends    -->
+
+	<!-- food section starts  -->
+
+<section class="food" id="food">
+
+   <div class="heading">  
+      <span>popular dishes</span>
+      <h3>our delicious food</h3>
+   </div>
+
+   <div class="swiper food-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide" data-name="food-1">
+            <img src="images/food-img-1.jpg" alt="">
+            <h3>Biriyani</h3>
+            <div class="price">₹200</div>
+         </div>
+
+         <div class="swiper-slide slide" data-name="food-2">
+            <img src="images/food-img-2.jpg" alt="">
+            <h3>Chicken Burgar</h3>
+            <div class="price">₹150</div>
+         </div>
+
+         <div class="swiper-slide slide" data-name="food-3">
+            <img src="images/food-img-3.jpg" alt="">
+            <h3>Grill Chicken</h3>
+            <div class="price">₹200</div>
+         </div>
+
+         <div class="swiper-slide slide" data-name="food-4">
+            <img src="images/food-img-4.jpg" alt="">
+            <h3>Parotta</h3>
+            <div class="price">₹99</div>
+         </div>
+
+         <div class="swiper-slide slide" data-name="food-5">
+            <img src="images/food-img-5.jpg" alt="">
+            <h3>Shakshuka</h3>
+            <div class="price">₹150</div>
+         </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+   </div>
+
+</section>
+
+<!-- food section ends -->
+
+<!-- food preview section starts  -->
+
+<section class="food-preview-container">
+
+   <div id="close-preview" class="fas fa-times"></div>
+
+   <div class="food-preview" data-target="food-1">
+      <img src="images/food-img-1.jpg" alt="">
+      <h3>Biriyani</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+      </div>
+      <p>Biryani is a mixed rice dish of the Indian subcontinent. It is made with Indian spices, rice, and usually some type of meat (chicken, beef, goat, lamb, prawn, fish) or in some cases without any meat, and sometimes, in addition, eggs and potatoes.</p>
+      <div class="price">₹200</div>
+      <a href="#" class="btn" onclick="order()">buy now</a>
+   </div>
+
+   <div class="food-preview" data-target="food-2">
+      <img src="images/food-img-2.jpg" alt="">
+      <h3>Chicken Burgar</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+      </div>
+      <p>Chicken burgers served on a hamburger bun with similar condiments and toppings as found on hamburgers. A chicken burger may also be made of a grilled or fried patty of ground chicken.</p>
+      <div class="price">₹150</div>
+      <a href="#" class="btn" onclick="order()">buy now</a>
+   </div>
+
+   <div class="food-preview" data-target="food-3">
+      <img src="images/food-img-3.jpg" alt="">
+      <h3>Grill Chicken</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+      </div>
+      <p>Barbecue chicken consists of chicken parts or entire chickens[1] that are barbecued, grilled or smoked.</p>
+      <div class="price">₹200</div>
+      <a href="#" class="btn" onclick="order()">buy now</a>
+   </div>
+
+   <div class="food-preview" data-target="food-4">
+      <img src="images/food-img-4.jpg" alt="">
+      <h3>Parotta</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+      </div>
+      <p>Parotta or Porotta is a Subcontinental layered flatbread made from Maida or Atta, alternatively known as flaky ribbon pancake.</p>
+      <div class="price">₹99</div>
+      <a href="#" class="btn" onclick="order()">buy now</a>
+   </div>
+
+   <div class="food-preview" data-target="food-5">
+      <img src="images/food-img-5.jpg" alt="">
+      <h3>Shakshuka</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+      </div>
+      <p>Impressive looking and deeply satisfying dish of North African origin: eggs poached over a compote of stewed bell pepper and tomato, with cumin, parsley and other herbs and spices. </p>
+      <div class="price">₹150</div>
+      <a href="#" class="btn" onclick="order()">buy now</a>
+   </div>
+<script>
+   function order(){
+      alert("order successfull");
+   }
+</script>
+</section>
+
+<!-- food preview section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="icons-container">
+
+      <div class="icons">
+         <i class="fas fa-clock"></i>
+         <h3>opening hours</h3>
+         <p>07:00am to 10:00pm</p>
+      </div>
+
+      <div class="icons">
+         <i class="fas fa-phone"></i>
+         <h3>phone</h3>
+         <p>+91 7539947757</p>
+         <p>+91 9626559181</p>
+      </div>
+
+      <div class="icons">
+         <i class="fas fa-envelope"></i>
+         <h3>email</h3>
+         <p>Dayout@gmail.com</p>
+         <p>sneka2711@gmail.com</p>
+      </div>
+
+      <div class="icons">
+         <i class="fas fa-map"></i>
+         <h3>address</h3>
+         <p>Namakkal - 637013</p>
+      </div>
+
+   </div>
+
+</section>
+
+<!-- footer section ends  -->
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+<!-- custom js file link  -->
+<script src="js/script.js"></script>
+
+<script>
+   lightGallery(document.querySelector('.gallery .gallery-container'));
+</script>
+<!-- font awesome cdn link  -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+</body>
+</html>
